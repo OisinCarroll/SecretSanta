@@ -107,6 +107,12 @@ h1{
 	color: #5a5a5a;
 }
 
+.shuffle{
+	margin-bottom: 30px;
+	float: right;
+	visibility: hidden;
+}
+
 .add-person button{
 	width: 100%;
 	font-size: 20px;

@@ -32,6 +32,12 @@ function SecretSanta(jsonFile){
 	function initButtons(){
 
 		$('.start-pairing').on('click', function(){
+			$('.shuffle').css('visibility', 'visible');
+			window.APP.generatePairings();
+		});
+
+		$('.shuffle').on('click', function(){
+			$('.pairing-container').remove();
 			window.APP.generatePairings();
 		});
 
@@ -54,7 +60,6 @@ function SecretSanta(jsonFile){
 				addToPersons(p);
 				$('.add-person').click();
 				renderPerson(p);
-				showAlert();
 				clearModal();
 			}	
 		});
@@ -131,7 +136,7 @@ function SecretSanta(jsonFile){
 		    opacity: 1,
 		    height: "74px"
 		}, 1000, function() {
-		    // Animation complete.
+		    showAlert();
 		});
 		person.on('click', function(){
 			var guid = $(this).attr('guid');
