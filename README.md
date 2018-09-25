@@ -25,5 +25,5 @@ Future features tbc:
   were this lifted then each crud-like operation on the ui could send an ajax request to a back-end script and rebuild 
   the json file with the updated user data.
 - Mass email functionality to notify all users of who they have paired with. Similarly would involve an ajax request sent to a 
-  server side mailing script which would construct a simple html email template and loop through all users. would require testing server
+  server side mailing script which would construct a simple html email template and loop through all users: would require testing server
   to have smtp enabled.
