@@ -132,6 +132,7 @@ function SecretSanta(jsonFile){
 		person.append('<p class="name">'+pobj.getFirstName()+' '+pobj.getLastName()+'</p>');
 		person.append('<p class="email">'+pobj.getEmail()+'</p>');
 		$('.person-list').prepend(person);
+		$('.person-list').scrollTop($('.person-list').children().first())
 		person.animate({
 		    opacity: 1,
 		    height: "74px"
