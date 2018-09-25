@@ -1,0 +1,149 @@
+h1,h2,h3,h4,h5,p, button, input{
+	font-family: Helvetica;
+}
+
+h1{
+	margin-top: 0px;
+    text-align: center;
+    margin-bottom: 25px;
+    display: none;
+}
+
+.overlay{
+	background-color: #e8e8e8;
+}
+
+.line{
+	width: 200px;
+    border-top: solid 1px #fd0d0d;
+    border-bottom: solid 1px #505050;
+    display: block;
+    margin: 15px auto;
+}
+
+.header{
+	display: block;
+	margin: 0px auto;
+}
+
+.person-list, .person-pairings{
+	margin-top: 20px;
+    overflow-y: scroll;
+    background-color: white;
+    -moz-box-shadow: 0px 1px 5px 0px #676767;
+    -webkit-box-shadow: 0px 1px 5px 0px #676767;
+    box-shadow: 0px 1px 1px 0px #676767;
+}
+
+.person-pairings{
+	height: 600px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.person-list{
+	height: 559px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+}
+
+.person-container{
+	width: auto;
+    padding: 10px;
+    border-bottom: solid 1px #e4e4e4;
+}
+
+.person-container:hover{
+	cursor:pointer;
+	background-color: #d8ffd5;
+}
+
+.person-pairing{
+	position: relative;
+}
+
+.start-pairing{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+}
+
+.pairing-container{
+	width: 100%;
+    border: solid 2px #e74c3c;
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 9px;
+}
+
+.p1, .p2, .buying-for{
+	display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.present{
+	width: 50%;
+	height: auto;
+}
+
+.name{
+	font-weight: bold;
+}
+
+.email{
+	color: #5a5a5a;
+}
+
+.add-person button{
+	width: 100%;
+	font-size: 20px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	padding-top: 6px;
+    padding-bottom: 7px;
+}
+
+.update-person{
+	display: none;
+}
+
+.right-arrow{
+	width: 32px;
+	height: 32px;
+}
+
+.modal.in .modal-dialog {-moz-transform: translate(0,0) !important;}
+
+.fade-scale {
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.fade-scale.in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.alert-success{
+	text-align: center;
+    position: fixed;
+    top: 42px;
+    width: 100%;
+    opacity: 0;
+}
