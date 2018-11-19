@@ -1,5 +1,5 @@
 h1,h2,h3,h4,h5,p, button, input{
-	font-family: Helvetica;
+	font-family: Arial;
 }
 
 h1{
@@ -76,7 +76,7 @@ h1{
     width: 100px;
     font-size: 21px;
     letter-spacing: 1px;
-    font-family: Helvetica;
+    font-family: Arial;
 }
 
 .pairing-container{
